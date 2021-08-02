@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://previews.123rf.com/images/jovanas/jovanas1606/jovanas160600377/58893843-quiz-icon.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Welcome to Quiz App</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="name-start" onsubmit="userName(event)">
+        <input type="text" placeholder="   Type Your Name" />
+        <div class="startButton"><button type="submit">Start Now</button></div>
+      </form>
+      <div class="ruleBox">
+        <h1 class="ruleTitle">Rules of this Quiz</h1>
+        <ul class="rulelist">
+          <li class="li-info">
+            1. Once You Move Forward ,You Can't Re-Visit Previous Questions.
+          </li>
+          <li class="li-info">2. To Answer Each Question You Have   Sec</li>
+          <li class="li-info">
+            3. No,Negative Marks,Per Correct Answer You Will get 5 points
+          </li>
+        </ul>
+        <div class="buttons">
+          <button class="back">&lt;&lt;Back</button>
+          <button class="next">Next &gt;&gt;</button>
+        </div>
+      </div>
+      <div class="quiz_box">
+        <header>
+          <h2 class="title">Welcome !!!</h2>
+          <div class="timer">
+            <div class="timertext">Time Left</div>
+            <div class="timerSec">45</div>
+          </div>
+          <div class="progressTime"></div>
+        </header>
+        <section>
+          <h3 class="ques">
+            
+          </h3>
+          <div class="option">
+              
+          </div>
+        </section>
+        <footer>
+            <div class="countques">
+                
+            </div>
+            <button class="next-btn" >Save & Next</button>
+        </footer>
+      </div>
+      <div class="result">
+        <div class="icon">
+          <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete">You have completed the quiz</div>
+        <div class="resultTxt">
+         
+        </div>
+        <div class="resBtn">
+          <button class="restart">Play Again</button>
+          <button class="quit">Quit Quiz</button>
+        </div>
+      </div>
+    </div>
+    <script src="projectQuiz.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
